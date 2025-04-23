@@ -70,12 +70,34 @@ The results of step 10 and 11
 
 12. To specify the number of lines from either the beginning or end of a file is to type the following:
 
-- Type in the command: head -n (input number) log.file
+- Type in the command: head -n (input number of your choice) log.file
 
-- Type in the command: tail -n (input number) log.file
+- Type in the command: tail -n (input number of your choice) log.file
 
 <img width="438" alt="image" src="https://github.com/user-attachments/assets/24d06242-a401-4240-9db6-27b51890f893" />
 
 The results of step 12
 
-13. 
+13. The grep command is used to parse for certain terms or expressions within a file.
+
+- Type in the command: grep --help
+
+14. To view the key words or anything that occurs in the log file.
+
+- Type in the command: cat ex191112.log | grep (input keyword of your choice)
+
+* It is important to ensure proper pronuciation or spelling is used or no results will generate.
+
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/07625688-cd58-4240-8424-0354761696c1" />
+
+Results of step 14
+
+15. Leafpad is an open-source and useful text editor tool in Linux.
+
+- Type in the command: leafpad ex191112.log
+
+<img width="520" alt="image" src="https://github.com/user-attachments/assets/d22df8fe-d424-4e95-9e43-90aeb685f8fd" />
+
+16. From here you can choose to delete or edit any lines to the log file. After completing any edits, you can save and close the file.
+
+17. 
