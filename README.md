@@ -34,4 +34,32 @@ The result of step 5
 
 - Type in the command: wc --help
 
-8. 
+8. Things that you are able to do with wc command:
+
+Type in the following commands for the these results:
+
+- wc -l file.log: View the number of lines in the file.
+
+- wc -c file.log: View the number of bytes in the file.
+
+- wc -m file.log: View the number of characters in the file.
+
+- wc -w file.log: View the number of words in the file.
+
+<img width="568" alt="image" src="https://github.com/user-attachments/assets/256c3e5f-5577-43cd-98bb-f3340f449d87" />
+
+The results of step 8
+
+9. The head command can be used to display the beginning of a file. head typically displays the first lines of a file. 
+
+- Type in the command: head --help 
+
+10. Now the same for the log. This will generate the first 10 lines of the log file.
+
+head ex191112.log
+
+<img width="384" alt="image" src="https://github.com/user-attachments/assets/a1b46db3-8989-42b2-9ace-a0b997196199" />
+
+The results of step 10 and 11
+
+11. 
