@@ -1,6 +1,6 @@
 # Log Analysis in Linux and Splunk
 
-In this lab project, I will analysis on logs I could search and find through Kali Linux and Splunk.
+In this lab project, I will analysis on logs I could search and find through Kali Linux and Splunk. Lab practice apart of Infosec Learning and through Springboard Curriculum. 
 
 Linux Analysis
 
@@ -50,16 +50,23 @@ Type in the following commands for the these results:
 
 The results of step 8
 
-9. The head command can be used to display the beginning of a file. head typically displays the first lines of a file. 
+9. The head command can be used to display the beginning or first lines of a file.
 
 - Type in the command: head --help 
 
 10. Now the same for the log. This will generate the first 10 lines of the log file.
 
-head ex191112.log
+- Type in the command: head ex191112.log
 
 <img width="384" alt="image" src="https://github.com/user-attachments/assets/a1b46db3-8989-42b2-9ace-a0b997196199" />
 
 The results of step 10 and 11
 
-11. 
+11. The tail command can be used to display the ending or last lines of a file.
+
+- Type in the command: tail ex191112.log
+
+<img width="380" alt="image" src="https://github.com/user-attachments/assets/e774ef4e-15fe-44da-a8da-a70483339011" />
+
+
+12. 
