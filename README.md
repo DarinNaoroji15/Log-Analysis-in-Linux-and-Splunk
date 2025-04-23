@@ -68,5 +68,14 @@ The results of step 10 and 11
 
 <img width="380" alt="image" src="https://github.com/user-attachments/assets/e774ef4e-15fe-44da-a8da-a70483339011" />
 
+12. To specify the number of lines from either the beginning or end of a file is to type the following:
 
-12. 
+- Type in the command: head -n (input number) log.file
+
+- Type in the command: tail -n (input number) log.file
+
+<img width="438" alt="image" src="https://github.com/user-attachments/assets/24d06242-a401-4240-9db6-27b51890f893" />
+
+The results of step 12
+
+13. 
