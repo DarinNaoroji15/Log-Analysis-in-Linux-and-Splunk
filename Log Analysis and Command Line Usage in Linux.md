@@ -1,6 +1,6 @@
-# Log Analysis in Linux and Splunk
+# Log Analysis in Linux
 
-In this lab project, I will analysis on logs I could search and find through Kali Linux and Splunk. Lab practice apart of Infosec Learning and through Springboard Curriculum. 
+In this lab project, I will analysis on logs I could search and find through Kali Linux. Lab practice apart of Infosec Learning and through Springboard Curriculum. 
 
 Linux Analysis
 
@@ -18,7 +18,7 @@ Linux Analysis
 
 <img width="631" alt="image" src="https://github.com/user-attachments/assets/add474c5-8967-4276-9441-b973dc3c2d5e" />
 
-The results from steps 2, 3, and 4
+Results from steps 2, 3, and 4
 
 5. After identifying the log, I want to view the log files to do so I will type in the following command
 
@@ -26,7 +26,7 @@ The results from steps 2, 3, and 4
 
 <img width="437" alt="image" src="https://github.com/user-attachments/assets/219b3eaf-352f-4976-ad26-dd499bdedf12" />
 
-The result of step 5
+Result of step 5
 
 6. The log file contains many lines and can be hard to understand the amount that there is to this file.
 
@@ -48,7 +48,7 @@ Type in the following commands for the these results:
 
 <img width="568" alt="image" src="https://github.com/user-attachments/assets/256c3e5f-5577-43cd-98bb-f3340f449d87" />
 
-The results of step 8
+Results of step 8
 
 9. The head command can be used to display the beginning or first lines of a file.
 
@@ -60,7 +60,7 @@ The results of step 8
 
 <img width="384" alt="image" src="https://github.com/user-attachments/assets/a1b46db3-8989-42b2-9ace-a0b997196199" />
 
-The results of step 10 and 11
+Results of step 10 and 11
 
 11. The tail command can be used to display the ending or last lines of a file.
 
@@ -76,7 +76,7 @@ The results of step 10 and 11
 
 <img width="438" alt="image" src="https://github.com/user-attachments/assets/24d06242-a401-4240-9db6-27b51890f893" />
 
-The results of step 12
+Results of step 12
 
 13. The grep command is used to parse for certain terms or expressions within a file.
 
@@ -92,12 +92,52 @@ The results of step 12
 
 Results of step 14
 
-15. Leafpad is an open-source and useful text editor tool in Linux.
+15. Leafpad is an open-source and useful text editor tool in Linux. By using the Leafpad command you can edit or change text within the original log file.
 
 - Type in the command: leafpad ex191112.log
 
 <img width="520" alt="image" src="https://github.com/user-attachments/assets/d22df8fe-d424-4e95-9e43-90aeb685f8fd" />
 
+Result from step 15
+
 16. From here you can choose to delete or edit any lines to the log file. After completing any edits, you can save and close the file.
 
-17. 
+17. The gawk command is a powerful program you can use to find pattern-matching/processing language.
+
+- Type in the command: gawk --help
+
+18. To display the first column or any columns type the following:
+
+- Type in the command: cat file.log | gawk '{print $1}'
+
+<img width="388" alt="image" src="https://github.com/user-attachments/assets/adc68766-7455-4056-8308-59fa0e6ea0d7" />
+
+Results from step 18
+
+19. The sort command can help put and order the columns a log file.
+
+- Type in the command: sort --help
+
+20. The uniq command can show all the output in unique way.
+
+- Type in the command: uniq --help
+
+21. If you combine both sort and uniq you can display unique values within each column or section of the file. This command will show unique values from the first command for example.
+
+- Type in the command: cat ex191112.log | gawk ‘{print $1}’ | sort | uniq -c
+
+![image](https://github.com/user-attachments/assets/b68df400-aae3-4133-880b-a56d12fc44bd)
+
+Result from step 21
+
+My takeaway: Log files can be extremely large. A helpful way to view the output of the log file is by using the command line in Linux. The commands used below can help with this process. Typing in the --help command will "help" and give you full context on which syntax to use, when trying to specify your parameters.
+
+- The cat command in Linux will allow you to view a file.
+
+- The grep command can be used to parse through the information.
+
+- The head command will show you the first lines in a file.
+
+- The tail command will show you the last few lines.
+
+- Using a combination of the gawk, sort, and uniq commands, you can find out specific information about events in log files.
