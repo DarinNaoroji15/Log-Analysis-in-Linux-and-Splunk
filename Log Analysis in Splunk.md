@@ -64,6 +64,20 @@ Result from step 13
 
 14. Search and type in 530. The "530" event code in IIS is a User cannot login error.
 
+![image](https://github.com/user-attachments/assets/cb7a7ebc-3820-4453-8ccf-3ce2a1cd85e9)
 
+Result from step 14
 
-15. 
+15. This is same number that the number of events with the code of 530 is 180,855. This was the exact same number of these event codes when we used all of the Linux commands below to parse the information.
+
+root@kali:~# cat file.log | gawk ‘{print $5}’ | sort | uniq -c
+
+16. Search and type in 230. The "230" is a sucessful log event code in IIS.
+
+![image](https://github.com/user-attachments/assets/44abb7c7-2bcb-4312-bcf7-972c6979251b)
+
+Result from step 16
+
+17. This is same number the number of events with the code of 230 is 2. This was the exact same number of these event codes when we used all of the Linux commands below to parse the information.
+
+root@kali:~# cat file.log | gawk ‘{print $5}’ | sort | uniq -c
