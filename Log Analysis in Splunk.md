@@ -16,4 +16,22 @@ Result from step 3
 
 Result from step 4
 
-5. Click upload
+5. Click upload files from my computer
+
+![image](https://github.com/user-attachments/assets/06de4224-3613-43ff-8c2e-a58ce8e09bfa)
+
+Result from step 5
+
+6. Click Select File
+
+![image](https://github.com/user-attachments/assets/41472e5a-8468-4b42-8cde-a9159c84505f)
+
+Result from step 6
+
+7. From the File Directory navigate to This PC -> Desktop -> files folder -> Select file.log
+
+![image](https://github.com/user-attachments/assets/45b707c4-4aaf-4d07-948d-33e470d315be)
+
+Result from step 7
+
+8. 
