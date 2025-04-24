@@ -1,6 +1,6 @@
-# Log Analysis in Linux
+# Log Analysis in Linux and Command Line Usage
 
-In this lab project, I will analysis on logs I could search and find through Kali Linux. Lab practice apart of Infosec Learning and through Springboard Curriculum. 
+In this lab project, I will analysis on logs I could search and find through Kali Linux.
 
 Linux Analysis
 
@@ -22,7 +22,7 @@ Results from steps 2, 3, and 4
 
 5. After identifying the log, I want to view the log files to do so I will type in the following command
 
-- Type in the command: cat ex191112.log
+- Type in the command: cat file.log
 
 <img width="437" alt="image" src="https://github.com/user-attachments/assets/219b3eaf-352f-4976-ad26-dd499bdedf12" />
 
@@ -56,7 +56,7 @@ Results of step 8
 
 10. Now the same for the log. This will generate the first 10 lines of the log file.
 
-- Type in the command: head ex191112.log
+- Type in the command: head file.log
 
 <img width="384" alt="image" src="https://github.com/user-attachments/assets/a1b46db3-8989-42b2-9ace-a0b997196199" />
 
@@ -64,7 +64,7 @@ Results of step 10 and 11
 
 11. The tail command can be used to display the ending or last lines of a file.
 
-- Type in the command: tail ex191112.log
+- Type in the command: tail file.log
 
 <img width="380" alt="image" src="https://github.com/user-attachments/assets/e774ef4e-15fe-44da-a8da-a70483339011" />
 
@@ -84,7 +84,7 @@ Results of step 12
 
 14. To view the key words or anything that occurs in the log file.
 
-- Type in the command: cat ex191112.log | grep (input keyword of your choice)
+- Type in the command: cat file.log | grep (input keyword of your choice)
 
 * It is important to ensure proper pronuciation or spelling is used or no results will generate.
 
@@ -94,7 +94,7 @@ Results of step 14
 
 15. Leafpad is an open-source and useful text editor tool in Linux. By using the Leafpad command you can edit or change text within the original log file.
 
-- Type in the command: leafpad ex191112.log
+- Type in the command: leafpad file.log
 
 <img width="520" alt="image" src="https://github.com/user-attachments/assets/d22df8fe-d424-4e95-9e43-90aeb685f8fd" />
 
@@ -124,7 +124,7 @@ Results from step 18
 
 21. If you combine both sort and uniq you can display unique values within each column or section of the file. This command will show unique values from the first command for example.
 
-- Type in the command: cat ex191112.log | gawk ‘{print $1}’ | sort | uniq -c
+- Type in the command: cat file.log | gawk ‘{print $1}’ | sort | uniq -c
 
 ![image](https://github.com/user-attachments/assets/b68df400-aae3-4133-880b-a56d12fc44bd)
 
